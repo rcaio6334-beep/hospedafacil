@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minhas reservas | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html">Início</a></li><li><a href="quartos.html">Quartos</a></li><li><a href="reserva.html">Reservar</a></li><li><a href="minhas-reservas.html" class="ativo" aria-current="page">Minhas reservas</a></li><li><a href="recepcao.html">Recepção</a></li><li><a href="tarifas.html">Tarifas</a></li><li><a href="relatorios.html">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<h1>Minhas reservas</h1>
+<div class="alerta sucesso" role="status"><strong>Reserva confirmada!</strong> Enviamos os dados da hospedagem para o seu e-mail.</div>
+<p class="rastro">Requisitos representados: RF05 Confirmação</p>
+<div class="tabela-wrap"><table>
+  <caption>Reservas do hóspede</caption>
+  <thead><tr><th scope="col">Código</th><th scope="col">Quarto</th><th scope="col">Período</th><th scope="col">Tarifa</th><th scope="col">Regra registrada</th><th scope="col">Total</th><th scope="col">Status</th><th scope="col">Ações</th></tr></thead>
+  <tbody>
+    <tr><td>HF-1042</td><td>Standard Casal</td><td>10/12 a 13/12/2026</td><td>Flexível</td><td>Cancelamento permitido</td><td>R$ 726,00</td><td><span class="selo ok">Confirmada</span></td><td><a href="reserva.html">Alterar</a> · <a href="minhas-reservas.html">Cancelar</a></td></tr>
+    <tr><td>HF-0988</td><td>Suíte Master</td><td>20/01 a 23/01/2027</td><td>Promocional</td><td>Não permite cancelamento</td><td>R$ 1.458,60</td><td><span class="selo ok">Confirmada</span></td><td><a href="reserva.html">Alterar</a> · <span class="desativado">Cancelar indisponível</span></td></tr>
+    <tr><td>HF-0871</td><td>Luxo Família</td><td>05/09 a 07/09/2026</td><td>Flexível</td><td>Cancelamento permitido</td><td>R$ 836,00</td><td><span class="selo cancel">Cancelada</span></td><td>—</td></tr>
+  </tbody>
+</table></div>
+<p class="rastro">Requisitos representados: RF07 Alterar reserva (se houver disponibilidade) · RF08 Cancelar conforme regra da tarifa · RN02 · RN04 · RN05</p>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>

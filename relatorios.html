@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relatórios | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html">Início</a></li><li><a href="quartos.html">Quartos</a></li><li><a href="reserva.html">Reservar</a></li><li><a href="minhas-reservas.html">Minhas reservas</a></li><li><a href="recepcao.html">Recepção</a></li><li><a href="tarifas.html">Tarifas</a></li><li><a href="relatorios.html" class="ativo" aria-current="page">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<h1>Relatórios gerenciais</h1>
+<p>Área do responsável comercial. Compare períodos para apoiar decisões de preço e capacidade.</p>
+<form class="filtros-inline" action="relatorios.html" method="get">
+  <div class="campo"><label for="p1">Período A</label><select id="p1" name="p1"><option>Out/2026</option><option>Set/2026</option></select></div>
+  <div class="campo"><label for="p2">Comparar com</label><select id="p2" name="p2"><option>Set/2026</option><option>Ago/2026</option></select></div>
+  <button class="botao" type="submit">Comparar</button>
+</form>
+<p class="rastro">Requisitos representados: RF13 Comparar períodos · HU13</p>
+<section>
+  <h2>Indicadores</h2>
+  <div class="tabela-wrap"><table>
+    <caption>Indicadores de desempenho (dados fictícios)</caption>
+    <thead><tr><th scope="col">Indicador</th><th scope="col">Out/2026</th><th scope="col">Set/2026</th><th scope="col">Variação</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Taxa de ocupação</th><td>78%</td><td>71%</td><td>+7 p.p.</td></tr>
+      <tr><th scope="row">Faturamento</th><td>R$ 184.300,00</td><td>R$ 162.900,00</td><td>+13,1%</td></tr>
+      <tr><th scope="row">Cancelamentos</th><td>23</td><td>31</td><td>-25,8%</td></tr>
+      <tr><th scope="row">Permanência média</th><td>2,8 noites</td><td>2,6 noites</td><td>+0,2</td></tr>
+    </tbody></table></div>
+  <p class="rastro">Requisitos representados: RF12 Relatórios gerenciais · HU12</p>
+</section>
+<section>
+  <h2>Quartos mais procurados</h2>
+  <ol>
+    <li>Standard Casal — 142 buscas</li>
+    <li>Luxo Família — 97 buscas</li>
+    <li>Suíte Master — 58 buscas</li>
+  </ol>
+</section>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>

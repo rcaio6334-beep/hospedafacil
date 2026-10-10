@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quartos disponíveis | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html">Início</a></li><li><a href="quartos.html" class="ativo" aria-current="page">Quartos</a></li><li><a href="reserva.html">Reservar</a></li><li><a href="minhas-reservas.html">Minhas reservas</a></li><li><a href="recepcao.html">Recepção</a></li><li><a href="tarifas.html">Tarifas</a></li><li><a href="relatorios.html">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<h1>Quartos disponíveis</h1>
+<p class="resumo-busca">Período: <strong>10/12/2026 a 13/12/2026</strong> (3 noites) · <strong>2 pessoas</strong></p>
+<section class="filtros" aria-labelledby="t-filtros">
+  <h2 id="t-filtros">Filtros</h2>
+  <form action="quartos.html" method="get">
+    <div class="campo"><label for="tipo">Tipo do quarto</label><select id="tipo" name="tipo"><option>Todos</option><option>Standard</option><option>Luxo</option><option>Suíte</option></select></div>
+    <div class="campo"><label for="camas">Camas</label><select id="camas" name="camas"><option>Qualquer</option><option>1</option><option>2</option><option>3</option></select></div>
+    <div class="campo"><label for="preco">Preço máximo (R$/noite)</label><input type="number" id="preco" name="preco" value="600" step="10"></div>
+    <fieldset class="campo"><legend>Comodidades</legend>
+      <label><input type="checkbox" name="ar" checked> Ar-condicionado</label>
+      <label><input type="checkbox" name="cafe"> Café da manhã</label>
+    </fieldset>
+    <button class="botao" type="submit">Aplicar filtros</button>
+  </form>
+  <p class="rastro">Requisitos representados: RF02 Filtrar quartos · HU02</p>
+</section>
+<section>
+  <h2>Resultados</h2>
+  <div class="cartoes">
+    <article class="cartao"><img src="img/quarto-standard.svg" alt="Quarto Standard Casal"><h3>Standard Casal</h3>
+      <ul class="lista-simples"><li>Até 2 pessoas</li><li>1 cama de casal</li><li>Ar-condicionado</li></ul>
+      <p class="preco">Total 3 noites: <strong>R$ 726,00</strong></p><p class="nota">Tarifa flexível, taxas incluídas</p>
+      <a class="botao" href="reserva.html">Reservar</a></article>
+    <article class="cartao"><img src="img/quarto-familia.svg" alt="Quarto Luxo Família"><h3>Luxo Família</h3>
+      <ul class="lista-simples"><li>Até 4 pessoas</li><li>3 camas</li><li>Ar-condicionado e café da manhã</li></ul>
+      <p class="preco">Total 3 noites: <strong>R$ 1.254,00</strong></p><p class="nota">Tarifa flexível, taxas incluídas</p>
+      <a class="botao" href="reserva.html">Reservar</a></article>
+    <article class="cartao"><img src="img/quarto-suite.svg" alt="Suíte Master"><h3>Suíte Master</h3>
+      <ul class="lista-simples"><li>Até 2 pessoas</li><li>1 cama king</li><li>Ar-condicionado, varanda e café da manhã</li></ul>
+      <p class="preco">Total 3 noites: <strong>R$ 1.716,00</strong></p><p class="nota">Tarifa flexível, taxas incluídas</p>
+      <a class="botao" href="reserva.html">Reservar</a></article>
+  </div>
+  <p class="rastro">Requisitos representados: RF01 Disponibilidade · RF03 Valor total · RN06 Taxas visíveis · RN07 Somente quartos disponíveis</p>
+</section>
+<section>
+  <h2>Comparativo rápido</h2>
+  <div class="tabela-wrap"><table>
+    <caption>Comparação dos quartos para 3 noites (tarifa flexível, taxa de serviço de 10% incluída)</caption>
+    <thead><tr><th scope="col">Quarto</th><th scope="col">Capacidade</th><th scope="col">Camas</th><th scope="col">Diária</th><th scope="col">Total</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Standard Casal</th><td>2</td><td>1</td><td>R$ 220,00</td><td>R$ 726,00</td></tr>
+      <tr><th scope="row">Luxo Família</th><td>4</td><td>3</td><td>R$ 380,00</td><td>R$ 1.254,00</td></tr>
+      <tr><th scope="row">Suíte Master</th><td>2</td><td>1</td><td>R$ 520,00</td><td>R$ 1.716,00</td></tr>
+    </tbody></table></div>
+</section>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tarifas | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html">Início</a></li><li><a href="quartos.html">Quartos</a></li><li><a href="reserva.html">Reservar</a></li><li><a href="minhas-reservas.html">Minhas reservas</a></li><li><a href="recepcao.html">Recepção</a></li><li><a href="tarifas.html" class="ativo" aria-current="page">Tarifas</a></li><li><a href="relatorios.html">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<h1>Gestão de tarifas</h1>
+<p>Área do gerente: define valores por período e as regras de cancelamento de cada tarifa.</p>
+<section>
+  <h2>Tarifas por período</h2>
+  <div class="tabela-wrap"><table>
+    <caption>Diária do Standard Casal conforme o período</caption>
+    <thead><tr><th scope="col">Período</th><th scope="col">Datas</th><th scope="col">Ajuste</th><th scope="col">Flexível</th><th scope="col">Promocional</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Baixa temporada</th><td>Mar a Jun</td><td>-10%</td><td>R$ 198,00</td><td>R$ 168,30</td></tr>
+      <tr><th scope="row">Alta temporada</th><td>Dez a Fev</td><td>+0%</td><td>R$ 220,00</td><td>R$ 187,00</td></tr>
+      <tr><th scope="row">Feriado</th><td>Natal e Ano Novo</td><td>+30%</td><td>R$ 286,00</td><td>R$ 243,10</td></tr>
+      <tr><th scope="row">Evento na cidade</th><td>Datas do evento</td><td>+20%</td><td>R$ 264,00</td><td>R$ 224,40</td></tr>
+    </tbody></table></div>
+  <p class="rastro">Requisitos representados: RF09 Tarifas por período · HU09 · RN03</p>
+</section>
+<section>
+  <h2>Tipos de tarifa e regras</h2>
+  <ul>
+    <li><strong>Flexível:</strong> valor mais alto, permite cancelamento.</li>
+    <li><strong>Promocional:</strong> desconto de 15%, não permite cancelamento.</li>
+    <li>A regra escolhida é gravada na reserva do hóspede para evitar divergências futuras.</li>
+  </ul>
+  <p class="rastro">Requisitos representados: RF10 Tarifa promocional e flexível · RF11 Regra registrada · RN04 · RN05</p>
+</section>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>

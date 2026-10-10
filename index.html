@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Início | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html" class="ativo" aria-current="page">Início</a></li><li><a href="quartos.html">Quartos</a></li><li><a href="reserva.html">Reservar</a></li><li><a href="minhas-reservas.html">Minhas reservas</a></li><li><a href="recepcao.html">Recepção</a></li><li><a href="tarifas.html">Tarifas</a></li><li><a href="relatorios.html">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<section class="hero">
+  <h1>Encontre o quarto ideal para a sua estadia</h1>
+  <p>Informe o período e o número de hóspedes e veja somente os quartos realmente disponíveis, com o valor total já incluindo taxas.</p>
+  <form class="busca" action="quartos.html" method="get">
+    <div class="campo"><label for="entrada">Entrada</label><input type="date" id="entrada" name="entrada" value="2026-12-10" required></div>
+    <div class="campo"><label for="saida">Saída</label><input type="date" id="saida" name="saida" value="2026-12-13" required></div>
+    <div class="campo"><label for="pessoas">Pessoas</label><input type="number" id="pessoas" name="pessoas" min="1" max="6" value="2" required></div>
+    <button type="submit" class="botao">Buscar disponibilidade</button>
+  </form>
+  <p class="rastro">Requisitos representados: RF01 Pesquisar disponibilidade · HU01 · RN07</p>
+</section>
+<section>
+  <h2>Por que reservar conosco?</h2>
+  <ul class="vantagens">
+    <li><strong>Preço total transparente:</strong> sem taxas surpresa no final.</li>
+    <li><strong>Disponibilidade atualizada:</strong> nenhum quarto confirmado para dois clientes.</li>
+    <li><strong>Regras claras:</strong> a regra de cancelamento da tarifa fica registrada na sua reserva.</li>
+    <li><strong>Confirmação imediata</strong> com todos os dados da hospedagem.</li>
+  </ul>
+  <p class="rastro">Requisitos representados: RF03 Valor total · RF05 Confirmação · RF11 Regra da tarifa · RNF02 Disponibilidade atualizada</p>
+</section>
+<section>
+  <h2>Destaques</h2>
+  <div class="cartoes">
+    <article class="cartao"><img src="img/quarto-standard.svg" alt="Quarto Standard Casal" ><h3>Standard Casal</h3><p>A partir de R$ 187,00 / noite</p><a class="botao" href="quartos.html">Ver quartos</a></article>
+    <article class="cartao"><img src="img/quarto-familia.svg" alt="Quarto Luxo Família"><h3>Luxo Família</h3><p>A partir de R$ 323,00 / noite</p><a class="botao" href="quartos.html">Ver quartos</a></article>
+    <article class="cartao"><img src="img/quarto-suite.svg" alt="Suíte Master"><h3>Suíte Master</h3><p>A partir de R$ 442,00 / noite</p><a class="botao" href="quartos.html">Ver quartos</a></article>
+  </div>
+</section>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>

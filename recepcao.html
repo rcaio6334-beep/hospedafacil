@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recepção | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html">Início</a></li><li><a href="quartos.html">Quartos</a></li><li><a href="reserva.html">Reservar</a></li><li><a href="minhas-reservas.html">Minhas reservas</a></li><li><a href="recepcao.html" class="ativo" aria-current="page">Recepção</a></li><li><a href="tarifas.html">Tarifas</a></li><li><a href="relatorios.html">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<h1>Painel da recepção</h1>
+<div class="duas-colunas">
+<section>
+  <h2>Reserva assistida (telefone ou balcão)</h2>
+  <form class="formulario" action="recepcao.html" method="get">
+    <div class="campo"><label for="doc">Localizar hóspede (nome ou CPF)</label><input type="search" id="doc" name="doc"></div>
+    <div class="campo"><label for="e">Entrada</label><input type="date" id="e" name="e" value="2026-12-10"></div>
+    <div class="campo"><label for="s">Saída</label><input type="date" id="s" name="s" value="2026-12-13"></div>
+    <div class="campo"><label for="q">Quarto</label><select id="q" name="q"><option>101 Standard Casal</option><option>102 Standard Casal</option><option>201 Luxo Família</option><option>301 Suíte Master</option></select></div>
+    <button class="botao" type="submit">Verificar disponibilidade e reservar</button>
+  </form>
+  <div class="alerta erro" role="alert"><strong>Conflito:</strong> o quarto 201 já possui reserva confirmada em parte deste período. Escolha outro quarto ou outras datas.</div>
+  <p class="rastro">Requisitos representados: RF06 Reserva pela recepção · HU06 · RN01 Sem sobreposição · RNF01 Consistência</p>
+</section>
+<section>
+  <h2>Ocupação da semana</h2>
+  <div class="tabela-wrap"><table class="grade">
+    <caption>Mapa de ocupação por quarto (07/12 a 13/12/2026)</caption>
+    <thead><tr><th scope="col">Quarto</th><th scope="col">Seg 07</th><th scope="col">Ter 08</th><th scope="col">Qua 09</th><th scope="col">Qui 10</th><th scope="col">Sex 11</th><th scope="col">Sáb 12</th><th scope="col">Dom 13</th></tr></thead>
+    <tbody><tr><th scope="row">101 Standard Casal</th><td class="livre">Livre</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="livre">Livre</td><td class="livre">Livre</td></tr><tr><th scope="row">102 Standard Casal</th><td class="livre">Livre</td><td class="livre">Livre</td><td class="livre">Livre</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="livre">Livre</td><td class="livre">Livre</td></tr><tr><th scope="row">201 Luxo Família</th><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="livre">Livre</td><td class="livre">Livre</td><td class="livre">Livre</td></tr><tr><th scope="row">301 Suíte Master</th><td class="livre">Livre</td><td class="livre">Livre</td><td class="livre">Livre</td><td class="livre">Livre</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td><td class="ocup">Ocupado</td></tr></tbody></table></div>
+  <p class="rastro">Requisitos representados: RF14 Gestão de quartos · RNF02 Disponibilidade atualizada · RNF04 Consulta rápida</p>
+</section>
+</div>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reservar | HospedaFácil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="cabecalho">
+  <div class="container topo">
+    <a class="marca" href="index.html"><img src="img/logo.svg" alt="Logo HospedaFácil" width="40" height="40"><span>HospedaFácil</span></a>
+    <p class="slogan">Reservas e disponibilidade em tempo real</p>
+  </div>
+  <nav class="menu" aria-label="Menu principal"><div class="container"><ul><li><a href="index.html">Início</a></li><li><a href="quartos.html">Quartos</a></li><li><a href="reserva.html" class="ativo" aria-current="page">Reservar</a></li><li><a href="minhas-reservas.html">Minhas reservas</a></li><li><a href="recepcao.html">Recepção</a></li><li><a href="tarifas.html">Tarifas</a></li><li><a href="relatorios.html">Relatórios</a></li></ul></div></nav>
+</header>
+<main class="container">
+
+<h1>Finalizar reserva</h1>
+<div class="duas-colunas">
+<section>
+  <h2>Dados do hóspede</h2>
+  <form class="formulario" action="minhas-reservas.html" method="get">
+    <div class="campo"><label for="nome">Nome completo</label><input type="text" id="nome" name="nome" required></div>
+    <div class="campo"><label for="email">E-mail (para a confirmação)</label><input type="email" id="email" name="email" required></div>
+    <div class="campo"><label for="tel">Telefone</label><input type="tel" id="tel" name="tel"></div>
+    <div class="campo"><label for="quarto">Quarto</label><select id="quarto" name="quarto"><option>Standard Casal</option><option>Luxo Família</option><option>Suíte Master</option></select></div>
+    <fieldset class="campo"><legend>Escolha a tarifa</legend>
+      <label><input type="radio" name="tarifa" value="flex" checked> <strong>Flexível</strong> — permite cancelamento · R$ 726,00</label>
+      <label><input type="radio" name="tarifa" value="promo"> <strong>Promocional</strong> — não permite cancelamento · R$ 617,10</label>
+    </fieldset>
+    <button class="botao" type="submit">Confirmar reserva</button>
+  </form>
+  <p class="rastro">Requisitos representados: RF04 Reserva online · RF05 Confirmação · RF11 Regra registrada na reserva · RN04 Tarifas · RN05</p>
+</section>
+<aside class="resumo">
+  <h2>Resumo da hospedagem</h2>
+  <div class="tabela-wrap"><table>
+    <caption>Standard Casal · 10/12/2026 a 13/12/2026 · 2 pessoas</caption>
+    <thead><tr><th scope="col">Item</th><th scope="col">Flexível</th><th scope="col">Promocional</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Diária</th><td>R$ 220,00</td><td>R$ 187,00</td></tr>
+      <tr><th scope="row">3 noites</th><td>R$ 660,00</td><td>R$ 561,00</td></tr>
+      <tr><th scope="row">Taxa de serviço (10%)</th><td>R$ 66,00</td><td>R$ 56,10</td></tr>
+    </tbody>
+    <tfoot><tr><th scope="row">Total</th><td>R$ 726,00</td><td>R$ 617,10</td></tr></tfoot>
+  </table></div>
+  <p class="aviso"><strong>Atenção:</strong> a tarifa promocional não permite cancelamento. Esta regra ficará registrada na sua reserva.</p>
+  <p class="rastro">Requisitos representados: RF03 · RN06 Sem taxas ocultas</p>
+</aside>
+</div>
+</main>
+<footer class="rodape">
+  <div class="container">
+    <p>&copy; 2026 HospedaFácil — Projeto acadêmico de Engenharia de Requisitos e Desenvolvimento de Aplicações para Internet (UNAMA, turma 20262).</p>
+    <p>Dados exibidos são fictícios e servem apenas para demonstrar os requisitos priorizados.</p>
+  </div>
+</footer>
+</body>
+</html>
